@@ -1048,7 +1048,7 @@ Menampilkan proses penghapusan data menu berdasarkan ID menu.
 
 **Dokumentasi:**
 
-<img width="355" height="277" alt="image" src="https://github.com/user-attachments/assets/36ee38a1-c040-4279-9ba8-2670bcd9f3aa" />
+<img width="355" height="277" alt="image" src="https://github.com/user-attachments/assets/36ee38a1-c040-4272-9ba8-2670bcd9f3aa" />
 
 ### 10.8 Validasi Input
 
@@ -1062,12 +1062,16 @@ Menampilkan beberapa kondisi ketika program menangani input yang tidak sesuai.
 
 Menampilkan penggunaan fitur perhitungan harga setelah diskon.
 
+**Dokumentasi:**
+
 <img width="450" height="478" alt="image" src="https://github.com/user-attachments/assets/bcb614ad-a1f5-43f4-ab64-406c4158c129" />
 
 
 ### 10.10 Struktur MVC
 
 Menampilkan struktur package program yang terdiri dari model, view, dan controller.
+
+**Dokumentasi:**
 
 <img width="297" height="363" alt="image" src="https://github.com/user-attachments/assets/2ef43c34-5471-473a-8ab5-d7ac6fd5cb00" />
 
