@@ -1,6 +1,6 @@
-package com.mycompany.sistemmanajemendatamenurestoran.model;
+package model;
 
-public class Menu {
+public abstract class Menu implements Diskonable {
 
     private String idMenu;
     private String namaMenu;
@@ -47,23 +47,22 @@ public class Menu {
         this.harga = harga;
     }
 
-    public void tampilkanInfo() {
+    public abstract void tampilkanInfo();
 
-        System.out.println(
-                "ID Menu   : " + idMenu
-        );
+    @Override
+    public double hitungHargaSetelahDiskon() {
+        return harga;
+    }
 
-        System.out.println(
-                "Nama Menu : " + namaMenu
-        );
+    @Override
+    public double hitungHargaSetelahDiskon(double persentaseDiskon) {
 
-        System.out.println(
-                "Kategori  : "
-                + kategori.getNamaKategori()
-        );
+        if (persentaseDiskon < 0 || persentaseDiskon > 100) {
+            throw new IllegalArgumentException(
+                    "Persentase diskon harus antara 0 sampai 100"
+            );
+        }
 
-        System.out.println(
-                "Harga     : Rp" + harga
-        );
+        return harga - (harga * persentaseDiskon / 100);
     }
 }

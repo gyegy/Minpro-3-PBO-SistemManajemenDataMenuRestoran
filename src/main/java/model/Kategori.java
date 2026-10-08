@@ -1,4 +1,4 @@
-package com.mycompany.sistemmanajemendatamenurestoran.model;
+package model;
 
 public class Kategori {
 
